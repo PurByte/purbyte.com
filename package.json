@@ -1,0 +1,21 @@
+{
+  "name": "purbyte.com",
+  "version": "1.0.0",
+  "description": "The source code of the purbyte website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "cd app && npm run build && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PurByte/purbyte.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PurByte/purbyte.com/issues"
+  },
+  "homepage": "https://github.com/PurByte/purbyte.com#readme"
+}

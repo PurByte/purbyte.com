@@ -1,0 +1,4 @@
+services:
+  app:
+    image: ghcr.io/purbyte/purbyte.com:latest
+    build: .
