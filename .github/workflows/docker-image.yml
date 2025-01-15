@@ -2,13 +2,9 @@ name: Build purbyte.com Docker Image
 
 on:
   push:
-    branches: ["master"]
-    paths-ignore:
-      - "app/**"
+    branches: ["main"]
   pull_request:
-    branches: ["master"]
-    paths-ignore:
-      - "app/**"
+    branches: ["main"]
 
 permissions:
   contents: read
