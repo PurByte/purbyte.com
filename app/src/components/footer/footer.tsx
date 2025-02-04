@@ -18,28 +18,25 @@ const Footer: React.FC = () => {
     return (
         <footer className={footerStyles.footer}>
             <div className={footerStyles.footerTop}>
+                <div id="footer-company" className={footerStyles.column}>
+                    <Link href="#footer-company"><h3>Company</h3></Link>
+                    <ul>
+                        <li><Link href="/p/privacy-policy" target="_blank">Privacy Policy</Link></li>
+                        <li><Link href="/p/terms-of-service" target="_blank">Terms of Service</Link></li>
+                    </ul>
+                </div>
+                <div id="footer-something" className={footerStyles.column}>
+                    <Link href="#footer-companies"><h3>Something</h3></Link>
+                    <ul>
+                        <li><a href="" target="_blank">Thing 1</a></li>
+                        <li><a href="" target="_blank">Thing 2</a></li>
+                    </ul>
+                </div>
                 <div id="footer-resources" className={footerStyles.column}>
                     <Link href="#footer-resources"><h3>Resources</h3></Link>
                     <ul>
-                        <li><a href="https://github.com/upayanmazumder/upayan.dev" target="_blank">Source Code</a></li>
-                        <li><Link href="/p/privacy-policy">Privacy Policy</Link></li>
-                        <li><Link href="/p/terms-of-service">Terms of Service</Link></li>
-                    </ul>
-                </div>
-                <div id="footer-companies" className={footerStyles.column}>
-                    <Link href="#footer-companies"><h3>Companies</h3></Link>
-                    <ul>
-                        <li><a href="https://bbn.one" target="_blank">BBN</a></li>
-                        <li><a href="https://eranodes.com" target="_blank">EraNodes</a></li>
-                        <li><a href="https://purbyte.com" target="_blank">Purbyte</a></li>
-                    </ul>
-                </div>
-                <div id="footer-projects" className={footerStyles.column}>
-                    <Link href="#footer-projects"><h3>Projects</h3></Link>
-                    <ul>
-                        <li><a href="https://www.boardly.in/" target="_blank">Boardly</a></li>
-                        <li><a href="https://github.com/upayanmazumder/Collaborative-Article-Sharing" target="_blank">Collaborative Article Sharing</a></li>
-                        <li><a href="https://github.com/upayanmazumder/Status-Page" target="_blank">Status Page</a></li>
+                        <li><a href="" target="_blank">Status Page</a></li>
+                        <li><a href="https://discord.gg/PvyRJzN5Pr" target="_blank">Support</a></li>
                     </ul>
                 </div>
             </div>
