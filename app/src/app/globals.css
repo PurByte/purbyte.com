@@ -1,42 +1,121 @@
+@font-face {
+  font-family: 'RedHatDisplay';
+  src: url('../../public/fonts/RedHatDisplay-VariableFont_wght.ttf') format(' truetype');
+
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --screen-horizontal-margin: 200px;
+  --screen-vertical-margin: calc(var(--screen-horizontal-margin)/4);
+
+  --primary-color: #080611;
+  --secondary-color: #341950; 
+  --tertiary-color: #54215c;
+
+  --text-color: #ffffff;
+  --text-link-color: #a9508c;
+  --text-link-hover-color: #fbbef9;
+
+  --padding-tiny: 5px;
+  --padding-small: 10px;
+  --padding-medium: 20px;
+  --padding-large: 40px;
+  --padding-huge: 80px;
+
+  --margin-tiny: 5px;
+  --margin-small: 10px;
+  --margin-medium: 20px;
+  --margin-large: 40px;
+  --margin-huge: 80px;
+
+  --border-radius-tiny: 5px;
+  --border-radius-small: 10px;
+  --border-radius-medium: 20px;
+  --border-radius-large: 40px;
+  --border-radius-huge: 80px;
+
+  --font-size-tiny: 10px;
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 20px;
+  --font-size-huge: 24px;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --transition-tiny: 0.1s;
+  --transition-small: 0.2s;
+  --transition-medium: 0.4s;
+  --transition-large: 0.8s;
+  --transition-huge: 1.6s;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  transition: all var(--transition-small) ease-in-out;
+}
+
+html {
+  background-color: var(--primary-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body {
+  color: var(--text-color);
+  font-family: "Red Hat Display", "din alternate", system-ui, optima, avenir;
+  min-height: 100vh;
+  ;
+}
+
+main {
+  margin: var(--screen-vertical-margin) var(--screen-horizontal-margin);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
 }
 
 a {
-  color: inherit;
+  color: var(--text-link-color);
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+a:hover {
+  color: var(--text-link-hover-color);
+}
+
+
+ul {
+  list-style: none;
+}
+
+button {
+  border-radius: 50dvh;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  border: none;
+  padding: var(--padding-small) var(--padding-medium);
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.24);
+}
+
+button svg {
+  margin: 0;
+  padding: 0;
 }
